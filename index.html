@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var _fetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function () {
+              return _fetch;
+            },
+            set: function (fn) {
+              _fetch = fn;
+            },
+          });
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUẢN LÝ THI ĐUA NỀ NẾP HỌC SINH - TRƯỜNG QUẢN BẠ</title>
+    <meta name="description" content="Hệ thống quản lý thi đua, nề nếp học sinh Trường PTDTBT TH&THCS Quản Bạ: phân công cờ đỏ, chấm điểm, duyệt kết quả, xếp hạng và lập biên bản trực tuần." />
+    <meta property="og:title" content="QUẢN LÝ THI ĐUA NỀ NẾP HỌC SINH - TRƯỜNG QUẢN BẠ" />
+    <meta property="og:description" content="Hệ thống quản lý thi đua, nề nếp học sinh Trường PTDTBT TH&THCS Quản Bạ: phân công cờ đỏ, chấm điểm, duyệt kết quả, xếp hạng và lập biên bản trực tuần." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-blue-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

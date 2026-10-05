@@ -1,0 +1,6 @@
+{
+  "name": "QUẢN LÝ THI ĐUA NỀ NẾP HỌC SINH - TRƯỜNG QUẢN BẠ",
+  "description": "Hệ thống quản lý thi đua, nề nếp học sinh Trường PTDTBT TH&THCS Quản Bạ: phân công cờ đỏ, chấm điểm, duyệt kết quả, xếp hạng và lập biên bản trực tuần.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
